@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="UTF-8">
+	<title>Кинотека</title>
+	<meta name="viewport" content="width=device-width, initial-scale=0.6">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<meta name="description" content="Кинотека - приложение за Вашият кино вкус. Търси, избери, харесай, оцени, сподели своето мнение за седмото изкуство">
+	<meta name="keywords" content="кино, филми, сериали, тв, социална мрежа, приложение, търсачна на филми">
+  	<meta name="author" content="Елена Вълчева">
+</head>
+<body>
+	<div class="avatar">
+		<a href="#page-4" data-toggle="tooltip" data-placement="right" title="Елена Вълчева">
+			<img src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-1/p160x160/47474385_2807636449262671_1733012088390942720_n.jpg?_nc_cat=111&_nc_ht=scontent-sof1-1.xx&oh=23aab64ec057bde93acc2c583e962f63&oe=5C8DA412" alt="" width="44" height="44" >
+		</a>
+	</div>
+	<div class="search" id="search">
+		<input type="text" name="search" class="form-control searchit" placeholder="Търси.." tabindex="1">
+	</div>
+	<div class="anchors">
+		<ul class="topnav" id="myTopnav">
+			<li><a href="#page-1" class="active">Начало</a></li>
+			<li><a href="#page-2">Кинотека</a></li>
+			<li><a href="#page-3">Приключенствай</a></li>
+			<li><a href="#page-4">Профил</a></li>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+				<i class="fa fa-times"></i>
+			</a>
+		</ul>
+		<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+		</script>
+	</div>
+	<main class="pg-container">
+		<section data-anchor="Page 1" id="page-1" class="pg-page pg-active">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="text text-center">
+						<h3 class="white-text">Добре дошли във Вашата
+							<div style="margin-top:50px;">
+								<a href="about.html" class="brand">Кинотека™</a> <img src="img/96x.png" style="margin-top:-45px;">
+							</div>
+						</h3>
+						<h5 class="white-text">developed by   <span class="border-black big">Елена Вълчева</span></h5>
+						<div class="mxy-big">
+							<p>Кинотека е приложение за бърз достъп до информация за любимите Ви филми, сериали, телевизионни предавания, animated series, cartoons, motion pictures и други.</p>
+							<ul class="features">
+								<li>Разглеждайте и съхранявайте</li>
+								<li>Търсете и споделяйте</li>
+								<li>Дайте своята оценка</li>
+							</ul>
+						</div>
+						<blockquote>
+							<p><span class="brand">Кинотека</span> беше спасението, което търсих. Като вляза в iMDB.com и ми става лошо от ненужен content.</p>
+							<small>Някоя известна личност по повод <cite title="Source Title"> моето приложение </cite></small>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section data-anchor="Page 2" id="page-2" class="pg-page">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="text text-center">
+						<div class="mxy-big">
+							<p>Използвайте търсачката "Приключенствай", за да намерите ново кино-хоби, да разгледате и да прочете интересни факти за холивудските звезди и т.н.</p>
+							<h2>Моята Кинотека</h2>
+							<ol class="list-group kinoteka">
+								<li class="list-group-item row" style="display: flex; flex-direction: row;">
+									<div class="col-xs-2">
+										<img src="https://m.media-amazon.com/images/M/MV5BNzAwNzUzNjY4MV5BMl5BanBnXkFtZTgwMTQ5MzM0NjM@._V1._SX40_CR0,0,40,54_.jpg" alt="">
+									</div>
+									<div class="col-xs-6" style="padding-top:16px;">
+										<span class="title">Venom (2018)</span>
+									</div>
+									<div class="col-xs-4" style="padding-top:16px;">
+										<span> Кинотека оценка: 4</span>
+									</div>
+								</li>
+								<li class="list-group-item row" style="display: flex; flex-direction: row;">
+									<div class="col-xs-2">
+										<img src="https://m.media-amazon.com/images/M/MV5BNDg2NjIxMDUyNF5BMl5BanBnXkFtZTgwMzEzNTE1NTM@._V1._SX40_CR0,0,40,54_.jpg" alt="">
+									</div>
+									<div class="col-xs-6" style="padding-top:16px;">
+										<span class="title">Bohemian Rhapsody (2018)</span>
+									</div>
+									<div class="col-xs-4" style="padding-top:16px;">
+										<span> Кинотека оценка: 5</span>
+									</div>
+								</li>
+								<li class="list-group-item row" style="display: flex; flex-direction: row;">
+									<div class="col-xs-2">
+										<img src="https://m.media-amazon.com/images/M/MV5BOTY4NDcyZGQtYmVlNy00ODgwLTljYTMtYzQ2OTE3NDhjODMwXkEyXkFqcGdeQXVyNzYzODM3Mzg@._V1._SX40_CR0,0,40,54_.jpg" alt="">
+									</div>
+									<div class="col-xs-6" style="padding-top:16px;">
+										<span class="title">Tomb Raider (2018)</span>
+									</div>
+									<div class="col-xs-4" style="padding-top:16px;">
+										<span> Кинотека оценка: 4</span>
+									</div>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section data-anchor="Page 3" id="page-3" class="pg-page">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="text text-center">
+						<form class="form-search">
+							<label class="helper-text">бавен double tap с пръст върху полето за търсене и след това върху бутона</label>
+							<div class="mxy-small input-group ">
+								<input type="text" placeholder="Търси" class="form-control input-lg searchit" tabindex="2">
+								<span class="input-group-btn">
+									<button class="btn btn-primary btn-lg" type="button" id="oimdb">Приключенствай</button>
+								</span>
+							</div>
+						</form>
+						<div class="panel panel-default result kinoteka mxy-medium">
+							<div class="panel-heading">Резултат</div>
+							<div class="panel-body">
+								<div class="mxy-small">
+									<strong>Заглавие:</strong> <span class="ititle"></span> - <strong>Година:</strong> <span class="iyear"></span>
+								</div>
+								<div class="mxy-small">
+									<img src="http://placehold.it/300x445" alt="" width="300" height="445" class="iposter">
+								</div>
+								<div class="mxy-small">
+									<strong>iMDB Рейтинг:</strong> <span class="irating"></span>
+								</div>
+								<div class="mxy-small">
+									<strong>Посочи своя Кинотека оценка: </strong>
+
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+									<span class="fa fa-star"></span>
+								</div>
+								<div class="mxy-small">
+									<div class="col-xs-12">
+										<input type="button" class="btn-block btn btn-success" value="Запази">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section data-anchor="Page 4" id="page-4" class="pg-page">
+			<div class="text text-center" style="padding-top:70px;">
+				<div class="avatar-big">
+					<a href="#page-4" data-toggle="tooltip" data-placement="right" title="Елена Вълчева">
+						<img src="https://scontent-sof1-1.xx.fbcdn.net/v/t1.0-1/p160x160/47474385_2807636449262671_1733012088390942720_n.jpg?_nc_cat=111&_nc_ht=scontent-sof1-1.xx&oh=23aab64ec057bde93acc2c583e962f63&oe=5C8DA412" alt="" width="84" height="84">
+					</a>
+				</div>
+				<div class="container">
+					<div class="row text-center">
+						<h4><p style="text-align: center;margin:15px 0px;"><strong id="user-globe-rank">1 </strong></p></h4>
+						<p><h2 class="label label-success" style="font-size:100%;">Глобален ранг</h2></p>
+					</div>
+				</div>
+				<div class="panel panel-default mxy-medium">
+					<div class="panel-body">
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+								<label class="col-lg-4 control-label">Име:</label>
+								<div class="col-lg-8">
+									<input class="form-control" type="text" value="Елена">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-4 control-label">Фамилия:</label>
+								<div class="col-lg-8">
+									<input class="form-control" type="text" value="Вълчева">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-4 control-label">Организация:</label>
+								<div class="col-lg-8">
+									<input class="form-control" type="text" value="Кинотека ООД">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-4 control-label">Имейл:</label>
+								<div class="col-lg-8">
+									<input class="form-control" type="text" value="admin@kinoteka.free.bg ">
+								</div>
+							</div>
+							<div class="form-group">
+
+								<div class="col-xs-12">
+									<input type="button" class="btn btn-primary" value="Запази">
+									<span></span>
+									<input type="reset" class="btn btn-default" value="Откажи">
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="dist/pageable.min.js"></script>
+	<script src="js/dellay.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
