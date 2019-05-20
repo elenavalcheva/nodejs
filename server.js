@@ -5,7 +5,7 @@ const session = require('express-session');
 const expressValidator = require('express-validator');
 const bodyParser = require('body-parser');
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
   secret: 'x)yLpP9up6a1SI;})L!dEgbT5g[h-2',
   resave: true,
@@ -32,10 +32,6 @@ app.use(expressValidator({
     };
   }
 }));
-
-
-
-
 
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'public/index.html'));
