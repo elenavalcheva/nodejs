@@ -5,7 +5,11 @@ const session = require('express-session');
 const expressValidator = require('express-validator');
 const bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
-
+var WebSocketServer = require('websocket').server;
+var WebSocketClient = require('websocket').client;
+var WebSocketFrame  = require('websocket').frame;
+var WebSocketRouter = require('websocket').router;
+var W3CWebSocket = require('websocket').w3cwebsocket;
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(session({
@@ -13,7 +17,8 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
-app.use(cookieParser())
+
+app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
