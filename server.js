@@ -2,7 +2,7 @@ const express = require('express');
 var path = require('path');
 const app = express();
 const session = require('express-session');
-const passport = require('passport');
+const expressValidator = require('express-validator');
 
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(session({
@@ -30,10 +30,8 @@ app.use(expressValidator({
 
 
 
-const server = require('http').createServer(app);
-server.listen(process.env.PORT || 4000 , function(){
-  console.log('Server is up!');
-});
+
+
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
@@ -42,4 +40,8 @@ app.get('/about', function(req, res){
 });
 app.get('/contacts', function(req, res){
   res.sendFile(path.join(__dirname, 'public/contacts.html'));
+});
+const server = require('http').createServer(app);
+server.listen(process.env.PORT || 4000 , function(){
+  console.log('Server is up!');
 });
