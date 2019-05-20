@@ -3,6 +3,7 @@ var path = require('path');
 const app = express();
 const session = require('express-session');
 const expressValidator = require('express-validator');
+const bodyParser = require('body-parser');
 
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(session({
@@ -10,6 +11,10 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
+
+app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/json
+app.use(bodyParser.json());
 
 app.use(expressValidator({
   errorFormatter: function(param, msg, value) {
